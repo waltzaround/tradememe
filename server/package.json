@@ -5,7 +5,7 @@
   "main": "Server.ts",
   "scripts": {
     "start": "npx ts-node ./src/Server.ts",
-    "seed-db": "seed -u mongodb://localhost:27017/tradememe --drop-database ./seed"
+    "seed-db": "source .env && DROP_DATABASE=true seed ./seed"
   },
   "keywords": [],
   "author": "",
