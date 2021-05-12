@@ -18,10 +18,10 @@
         <div class='divider'></div>
         <h1>What meme are you listing?</h1>
 
-        <form>
+        <form onsubmit="return submitMeme(event)">
             <div class='meme-form'>
                 <label class='meme-form-label' for='meme-name'>Meme Name</label>
-                <input class='meme-form-input' name="meme-name" id="meme-name" type='text'></input>
+                <input class='meme-form-input' name=" meme-name" id="meme-name" type='text'></input>
             </div>
 
             <div class='meme-form'>
@@ -34,7 +34,7 @@
                 <input class='meme-form-input' name='meme-price' id='meme-price' max="20" type='number'></input>
             </div> -->
             <div>
-                <button onclick="submitMeme()" id='meme-submi' class='bid-button'>Submit Meme</button>
+                <button type='submit' id='meme-submit' class='bid-button'>Submit Meme</button>
             </div>
         </form>
 

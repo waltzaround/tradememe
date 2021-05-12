@@ -60,7 +60,8 @@ function generateListing(id, title, currentBid, image) {
     `;
 }
 
-async function submitMeme() {
+async function submitMeme(e) {
+  e.preventDefault();
   var name = document.getElementById("meme-name").value;
   var imagememe = document.getElementById("meme-image").value;
   //   var price = document.getElementById("meme-price").value;
