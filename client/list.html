@@ -21,20 +21,20 @@
         <form>
             <div class='meme-form'>
                 <label class='meme-form-label' for='meme-name'>Meme Name</label>
-                <input class='meme-form-input' id="meme-name" type='text'></input>
+                <input class='meme-form-input' name="meme-name" id="meme-name" type='text'></input>
             </div>
 
             <div class='meme-form'>
                 <label class='meme-form-label' for='meme-image'>Meme Image URL</label>
-                <input class='meme-form-input' id='meme-image' type='text'></input>
+                <input class='meme-form-input' name='meme-image' id='meme-image' type='text'></input>
             </div>
 
-            <div class='meme-form'>
+            <!-- <div class='meme-form'>
                 <label class='meme-form-label'>Starting Price</label>
-                <input class='meme-form-input' max="20" type='number'></input>
-            </div>
+                <input class='meme-form-input' name='meme-price' id='meme-price' max="20" type='number'></input>
+            </div> -->
             <div>
-                <button class='bid-button'>Submit Meme</button>
+                <button onclick="submitMeme()" id='meme-submi' class='bid-button'>Submit Meme</button>
             </div>
         </form>
 
