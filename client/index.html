@@ -13,8 +13,8 @@
                 <a class="nav-link" href="./list.html">List a meme +</a>
             </header>
             <div class="search">
-                <input class="search-input" placeholder="Search" onchange="handleSearchChange(this.value)" />
-                <button class="search-button">&#x1F50E;</button>
+                <input class="search-input" placeholder="Search" id="search-input" />
+                <button class="search-button" onclick="handleSearchChange(document.getElementById('search-input').value)">&#x1F50E;</button>
             </div>
             <div class="listings" id="listings">
                 <div class="listing">
