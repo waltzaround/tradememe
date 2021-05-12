@@ -3,7 +3,6 @@
 let auctions = [];
 
 function loadApp() {
-    console.log(generateListing('Test', 100))
     getListings().then((data) => {
         auctions = data;
         const listingsHtml = data.map(auction => generateListing(auction._id, auction.title, 1, auction.image)).join('')
