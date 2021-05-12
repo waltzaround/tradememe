@@ -4,7 +4,7 @@
   "description": "",
   "main": "Server.ts",
   "scripts": {
-    "start": "npx ts-node -r dotenv/config ./src/Server.ts",
+    "start": "ts-node -r dotenv/config ./src/Server.ts",
     "seed-db": "env $(cat $PWD/.env) DROP_DATABASE=true seed ./seed"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
     "express": "^4.17.1",
     "mongo-seeding-cli": "^3.6.0",
     "mongodb": "^3.6.6",
+    "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
   },
   "devDependencies": {
