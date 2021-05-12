@@ -72,7 +72,7 @@ async function submitMeme(e) {
       Accept: "application/json",
       "Content-Type": "appication/json",
     },
-    body: JSON.stringify({ title: name, image: imagememe }),
+    body: JSON.stringify({ auction: { title: name, image: imagememe } }),
   });
 
   const data = await res.json();
