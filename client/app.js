@@ -1,6 +1,6 @@
 'use strict'
 
-const API_URL = location.host === 'tradememe.club' ? 'http://localhost:8080' : 'https://api.tradememe.club'
+const API_URL = location.host === 'tradememe.club' ? 'https://api.tradememe.club' : 'http://localhost:8080'
 let auctions = [];
 
 function loadApp() {
