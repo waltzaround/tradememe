@@ -70,7 +70,7 @@ async function submitMeme(e) {
     method: "POST",
     headers: {
       Accept: "application/json",
-      "Content-Type": "appication/json",
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({ auction: { title: name, image: imagememe } }),
   });
