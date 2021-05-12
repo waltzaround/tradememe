@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Trade Meme</title>
-        <link rel="stylesheet" href="app.css">
-    </head>
-    <body>
-        <header className="header">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trade Meme</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
             <img src="./logo.JPG" className="logo">
-            <a className="nav-link">About</a>
-            <a className="nav-link" href="./list.html">List a meme +</a>
-            Create
-        </div>
-        <script src="app.js"></script>
-    </body>
+            <div class='nav-container'>
+                <a class="nav-link">About</a>
+                <a class="nav-link" href="./index.html">View Memes</a>
+            </div>
+        </header>
+        <div class='divider'></div>
+        <h1>What meme are you listing?</h1>
+
+        <form>
+            <div class='meme-form'>
+                <label class='meme-form-label' for='meme-name'>Meme Name</label>
+                <input class='meme-form-input' id="meme-name" type='text'></input>
+            </div>
+
+            <div class='meme-form'>
+                <label class='meme-form-label' for='meme-image'>Meme Image URL</label>
+                <input class='meme-form-input' id='meme-image' type='text'></input>
+            </div>
+
+            <div class='meme-form'>
+                <label class='meme-form-label'>Starting Price</label>
+                <input class='meme-form-input' max="20" type='number'></input>
+            </div>
+            <div>
+                <button class='bid-button'>Submit Meme</button>
+            </div>
+        </form>
+
+
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
 </html>
