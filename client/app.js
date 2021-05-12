@@ -1,5 +1,6 @@
 'use strict'
 
+const API_URL = location.host === 'tradememe.club' ? 'http://localhost:8080' : 'https://api.tradememe.club'
 let auctions = [];
 
 function loadApp() {
@@ -18,7 +19,7 @@ function handleSearchChange(search) {
 
 
 async function getListings() {
-    const res = await fetch('http://localhost:8080/auctions');
+    const res = await fetch(`${API_URL}/auctions`);
     const data = await res.json();
     return data.auctions;
 }
