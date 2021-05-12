@@ -4,8 +4,6 @@ import cors from 'cors';
 import config from './config';
 import registerRoutes from './routes';
 
-require('dotenv').config()
-
 function startServer() {
     const app = express();
     app.use(cors())

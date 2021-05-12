@@ -4,7 +4,7 @@
   "description": "",
   "main": "Server.ts",
   "scripts": {
-    "start": "npx ts-node ./src/Server.ts",
+    "start": "npx ts-node -r dotenv/config ./src/Server.ts",
     "seed-db": "env $(cat $PWD/.env) DROP_DATABASE=true seed ./seed"
   },
   "keywords": [],
