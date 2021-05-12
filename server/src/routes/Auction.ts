@@ -30,4 +30,17 @@ export default (app: Router) => {
             }
         },
     );
+    app.post(
+        '/auctions/',
+        async (req: Request, res: Response, next: NextFunction) => {
+            try {
+                const client = await MongoClient.connect(config.databaseUrl);
+                var dbo = client.db("tradememe");
+                const auction = await dbo.collection("auctions").insertOne(req.body.auction);
+                return res.status(200).json({ auction });
+            } catch (e) {
+                return next(e);
+            }
+        },
+    );
 }
