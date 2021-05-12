@@ -5,7 +5,7 @@
   "main": "Server.ts",
   "scripts": {
     "start": "npx ts-node ./src/Server.ts",
-    "seed-db": ". .env && DROP_DATABASE=true seed ./seed"
+    "seed-db": ". $PWD/.env && DROP_DATABASE=true seed ./seed"
   },
   "keywords": [],
   "author": "",
