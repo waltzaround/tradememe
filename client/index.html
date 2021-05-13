@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Trade Meme</title>
-
-</head>
-
-<body>
-
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <title>Trade Meme</title>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
+    </head>
+    <body onload="loadApp()">
+        <div class="app">
+            <header class="header">
+                <img src="./logo.JPG" class="logo">
+                <a class="nav-link" href="./list.html">List a meme +</a>
+            </header>
+            <div class="search">
+                <input class="search-input" placeholder="Search" id="search-input" />
+                <button class="search-button" onclick="handleSearchChange(document.getElementById('search-input').value)">&#x1F50E;</button>
+            </div>
+            <div class="listings" id="listings">
+                
+            </div>
+        </div>
+    </body>
 </html>
