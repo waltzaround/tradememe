@@ -1,3 +1,12 @@
+:root {
+  --link: #007acd;
+  --divider: rgb(214, 214, 214);
+  --input-border: #D3D3D3;
+  --search-border: #fbcc48;
+  --container: #fffae5;
+  --primary-font: "Helvetica Neue", Arial, sans-serif;
+}
+
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
@@ -28,7 +37,7 @@ body {
 .nav-link {
   font-size: 20px;
   text-decoration: none;
-  color: #06c;
+  color: var(--link);
   font-weight: 700;
 }
 
@@ -39,7 +48,7 @@ body {
 
 .meme-form-label {
   display: block;
-  font-family: Helvetica Neue;
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -151,14 +160,15 @@ body {
   .app {
     margin: 1rem;
   }
-  .meme-form-input { 
+  .meme-form-input {
     width: 100%;
     padding: 1rem;
-  } 
-}
-  @media screen and (max-width:768px) {
-    header {
-      flex-direction: column;
-      gap: 1rem;
-    }
   }
+}
+
+@media screen and (max-width:768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
