@@ -64,6 +64,7 @@ async function submitMeme(e) {
   e.preventDefault();
   var name = document.getElementById("meme-name").value;
   var imagememe = document.getElementById("meme-image").value;
+  var memebutton = document.getElementById("meme-submit");
   //   var price = document.getElementById("meme-price").value;
 
   const res = await fetch(`${API_URL}/auctions`, {
@@ -76,4 +77,6 @@ async function submitMeme(e) {
   });
 
   const data = await res.json();
+  memebutton.disabled = true;
+  window.location.href = "/";
 }
